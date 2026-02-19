@@ -37,11 +37,28 @@ const Footer = () => {
           {/* Technical Coordinator Info */}
           <div className="text-center md:text-right">
             <h3 className="text-xl font-bold text-black mb-2">
-              Technical Coordinator
+              Technical Coordinators
             </h3>
-            <p className="text-lg text-gray-700 font-semibold">Bhuvan A R</p>
-            <p className="text-md text-gray-700">📞 +91 8317462097</p>
-            <p className="text-md text-gray-700">✉️ bhuvan.ar0101@gmail.com</p>
+            <div className="space-y-3">
+              <div>
+                <p className="text-lg text-gray-700 font-semibold">
+                  Bhuvan A R
+                </p>
+                <p className="text-md text-gray-700">📞 +91 8317462097</p>
+                <p className="text-md text-gray-700">
+                  ✉️ bhuvan.ar0101@gmail.com
+                </p>
+              </div>
+              <div>
+                <p className="text-lg text-gray-700 font-semibold">
+                  Vinayaka S 
+                </p>
+                <p className="text-md text-gray-700">📞 +91 9000000000</p>
+                <p className="text-md text-gray-700">
+                  ✉️ vinayaka.s@example.com
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
