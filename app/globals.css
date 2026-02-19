@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .links {
+    @apply border-8 border-slate-900 px-4 py-2
+  }
+}
