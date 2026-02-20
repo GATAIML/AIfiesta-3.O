@@ -51,13 +51,16 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-lg text-gray-700 font-semibold">
-                  Vinayaka S 
+                  Vinayaka S
                 </p>
                 {/* <p className="text-md text-gray-700">📞 +91 9000000000</p> */}
               </div>
               <div>
                 <p className="text-md text-gray-700">
-                  ✉️ <a href="mailto:aifiesta3o.tech@gmail.com">aifiesta3o.tech@gmail.com</a>
+                  ✉️{" "}
+                  <a href="mailto:aifiesta3o.tech@gmail.com">
+                    aifiesta3o.tech@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -67,7 +70,7 @@ const Footer = () => {
         {/* Bottom Copyright */}
         <div className="mt-8 pt-4 border-t-2 border-gray-300 text-center">
           <p className="text-sm text-gray-600">
-            © 2025 AIfiesta 3.0 - Department of AIML, Global Academy of
+            © 2025 Hackaphasia - Department of AIML, Global Academy of
             Technology. All rights reserved.
           </p>
           {/* <div className="mt-8 text-center text-sm text-gray-500">
