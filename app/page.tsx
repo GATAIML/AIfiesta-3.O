@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import ProblemCard from "../components/ProblemCard";
 import { problemCategories } from "@/lib/data";
 import Header from "@/components/Header";

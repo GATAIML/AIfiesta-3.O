@@ -70,6 +70,9 @@ const Footer = () => {
             © 2025 AIfiesta 3.0 - Department of AIML, Global Academy of
             Technology. All rights reserved.
           </p>
+          {/* <div className="mt-8 text-center text-sm text-gray-500">
+          Made with ❤️ by Bhuvan A R
+        </div> */}
         </div>
       </div>
     </footer>
