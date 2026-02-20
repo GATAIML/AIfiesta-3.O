@@ -102,15 +102,15 @@ const Home = () => {
                 >
                   Rule Book
                 </Link>
-                <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
+                {/* <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
                   Problem Statements (Coming Soon)
-                </div>
-                {/* <Link
-                href="/chatbotbattle-problemstatements"
-                className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
-              >
-                Problem Statements
-              </Link> */}
+                </div> */}
+                <Link
+                  href="/chatbotbattle-problemstatements"
+                  className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                >
+                  Problem Statements (Coming Soon)
+                </Link>
               </div>
               {/* <div className="flex flex-wrap justify-center gap-6 mt-6">
               <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed flex items-center gap-2">
@@ -165,15 +165,15 @@ const Home = () => {
                 >
                   Rule Book
                 </Link>
-                <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
+                {/* <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
                   Problem Statements (Coming Soon)
-                </div>
-                {/* <Link
-                href="/aideathon-problemstatements"
-                className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
-              >
-                Problem Statements
-              </Link> */}
+                </div> */}
+                <Link
+                  href="/aideathon-problemstatements"
+                  className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                >
+                  Problem Statements (Coming Soon)
+                </Link>
               </div>
             </div>
           </div>

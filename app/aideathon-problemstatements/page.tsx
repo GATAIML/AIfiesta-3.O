@@ -8,7 +8,7 @@ import { problemCategories } from "@/lib/data";
 export default function AideathonProblemStatements() {
 
   // 🔥 Start Time: 27 Feb 2026 – 9:00 AM
-  const startTime = new Date("2026-02-27T09:00:00");
+  const startTime = new Date("2026-02-25T09:00:00");
   const now = new Date();
   const hasStarted = now >= startTime;
 
@@ -33,7 +33,7 @@ export default function AideathonProblemStatements() {
           </h2>
 
           <p className="text-lg text-gray-700 mb-2">
-            🕒 Starts at: 27 Feb 2026 | 9:00 AM
+            🕒 Opens at: 25 Feb 2026 | 9:00 AM
           </p>
 
           {!hasStarted && (
