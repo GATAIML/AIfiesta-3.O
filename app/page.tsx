@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ProblemCard from "../components/ProblemCard";
 import { problemCategories } from "@/lib/data";
+import Header from "@/components/Header";
 
 const Home = () => {
   const [showProblems, setShowProblems] = useState(false);
@@ -17,35 +18,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center w-full min-h-screen bg-slate-100 text-black py-12 px-6">
       {/* Navbar with three logos */}
-      <nav className="w-full max-w-6xl mx-4 mb-8 flex items-center justify-between bg-white border-4 border-black rounded-lg p-4 shadow-[4px_4px_0px_black]">
-        <div className="flex-1 flex justify-start">
-          <Image
-            src="/gatlogo.png"
-            alt="Left Logo"
-            width={120}
-            height={120}
-            className="w18 h-18 md:w-28 md:h-28 object-contain"
-          />
-        </div>
-        <div className="flex-1 flex justify-center">
-          <Image
-            src="/aifiestalogo3.png"
-            alt="Center Logo"
-            width={80}
-            height={80}
-            className="w-20 h-20 md:w-60 md:h-26 object-contain bg-black p-2 rounded-lg shadow-[4px_4px_0px_white]"
-          />
-        </div>
-        <div className="flex-1 flex justify-end">
-          <Image
-            src="/aimllogo.png"
-            alt="Right Logo"
-            width={80}
-            height={80}
-            className="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg"
-          />
-        </div>
-      </nav>
+      <Header />
 
       <div className="border-4 border-black rounded-2xl max-w-6xl w-full mx-4 p-10 text-center bg-white shadow-[8px_8px_0px_black]">
         {/* <div className="h-1 mx-auto bg-black my-4" /> */}
@@ -108,9 +81,9 @@ const Home = () => {
               </ul>
             </div>
             {/* Registration and Rule Book Buttons */}
-            {/* <div className="flex flex-wrap justify-center gap-6 mt-6">
+            <div className="flex flex-wrap justify-center gap-6 mt-6">
               <Link
-                href=""
+                href="https://forms.gle/psSesEvADUpa48rA7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border-2 border-black rounded-lg bg-green-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer flex items-center gap-2"
@@ -119,13 +92,13 @@ const Home = () => {
                 Register Now
               </Link>
               <Link
-                href=""
+                href="/chatbot-battle-rulebook"
                 className="px-6 py-3 border-2 border-black rounded-lg bg-blue-500 text-black font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
               >
                 Rule Book
               </Link>
-            </div> */}
-            <div className="flex flex-wrap justify-center gap-6 mt-6">
+            </div>
+            {/* <div className="flex flex-wrap justify-center gap-6 mt-6">
               <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed flex items-center gap-2">
                 <span className="text-xl opacity-50">●</span>
                 Registration Coming Soon
@@ -134,7 +107,7 @@ const Home = () => {
               <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
                 Rule Book (Coming Soon)
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* AIdeathon */}
@@ -162,9 +135,9 @@ const Home = () => {
               </ul>
             </div>
             {/* Registration and Rule Book Buttons */}
-            {/* <div className="flex flex-wrap justify-center gap-6 mt-6">
+            <div className="flex flex-wrap justify-center gap-6 mt-6">
               <Link
-                href="https://your-registration-link.com"
+                href="https://forms.gle/Gec9EiCy7h6mijgh8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border-2 border-black rounded-lg bg-green-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer flex items-center gap-2"
@@ -173,23 +146,12 @@ const Home = () => {
                 Register Now
               </Link>
               <Link
-                href="/rulebook"
+                href="/aideathon-rulebook"
                 className="px-6 py-3 border-2 border-black rounded-lg bg-blue-500 text-black font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
               >
                 Rule Book
               </Link>
-            </div> */}
-            <div className="flex flex-wrap justify-center gap-6 mt-6">
-              <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed flex items-center gap-2">
-                <span className="text-xl opacity-50">●</span>
-                Registration Coming Soon
-              </div>
-
-              <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
-                Rule Book (Coming Soon)
-              </div>
             </div>
-
           </div>
         </div>
       </div>

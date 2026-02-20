@@ -44,18 +44,20 @@ const Footer = () => {
                 <p className="text-lg text-gray-700 font-semibold">
                   Bhuvan A R
                 </p>
-                <p className="text-md text-gray-700">📞 +91 8317462097</p>
-                <p className="text-md text-gray-700">
+                {/* <p className="text-md text-gray-700">📞 +91 8317462097</p> */}
+                {/* <p className="text-md text-gray-700">
                   ✉️ bhuvan.ar0101@gmail.com
-                </p>
+                </p> */}
               </div>
               <div>
                 <p className="text-lg text-gray-700 font-semibold">
                   Vinayaka S 
                 </p>
-                <p className="text-md text-gray-700">📞 +91 9000000000</p>
+                {/* <p className="text-md text-gray-700">📞 +91 9000000000</p> */}
+              </div>
+              <div>
                 <p className="text-md text-gray-700">
-                  ✉️ vinayaka.s@example.com
+                  ✉️ <a href="mailto:aifiesta3o.tech@gmail.com">aifiesta3o.tech@gmail.com</a>
                 </p>
               </div>
             </div>
