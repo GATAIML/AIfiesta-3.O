@@ -55,7 +55,9 @@ const Home = () => {
             Rule Book
           </button>
         </div> */}
-
+          <p className="text-red-600 font-semibold text-lg mt-4">
+            🎉 IEEE Participation Certificate will be provided.
+          </p>
           {/* Event Sections - Grid layout for side-by-side on laptop/tablet */}
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Chatbot Battle */}
