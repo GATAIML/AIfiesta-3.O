@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom Copyright */}
         <div className="mt-8 pt-4 border-t-2 border-gray-300 text-center">
           <p className="text-sm text-gray-600">
-            © 2025 Hackaphasia - Department of AIML, Global Academy of
+            © 2026 AIfiesta 3.0 - Department of AIML, Global Academy of
             Technology. All rights reserved.
           </p>
           {/* <div className="mt-8 text-center text-sm text-gray-500">

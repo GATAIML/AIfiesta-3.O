@@ -41,7 +41,7 @@ const Header = () => {
           </a>
         </div>
       </nav>
-      {/* <LeaderBoardPopUp /> */}
+      <LeaderBoardPopUp />
     </>
   );
 };
