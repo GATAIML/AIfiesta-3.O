@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 // import Image from "next/image";
 import ProblemCard from "../components/ProblemCard";
@@ -10,11 +10,30 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 
 const Home = () => {
   const [showProblems, setShowProblems] = useState(false);
+  const [chatbotProblemsAvailable, setChatbotProblemsAvailable] =
+    useState(false);
 
   const now = new Date();
   const target = new Date(2025, 8, 18, 18, 15);
+  const chatbotProblemStatementsTarget = new Date(2026, 1, 27, 9, 0);
 
   const show = now >= target;
+
+  useEffect(() => {
+    const checkChatbotProblemsTime = () => {
+      const currentTime = new Date();
+      if (currentTime >= chatbotProblemStatementsTarget) {
+        setChatbotProblemsAvailable(true);
+      }
+    };
+
+    checkChatbotProblemsTime();
+
+    // Check every minute to update when the time passes
+    const interval = setInterval(checkChatbotProblemsTime, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -107,12 +126,21 @@ const Home = () => {
                 {/* <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
                   Problem Statements (Coming Soon)
                 </div> */}
-                <Link
-                  href="/chatbotbattle-problemstatements"
-                  className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
-                >
-                  Problem Statements (Coming Soon)
-                </Link>
+                {chatbotProblemsAvailable ? (
+                  <Link
+                    href="/chatbotbattle-problemstatements"
+                    className="px-6 py-3 border-2 border-black rounded-lg bg-yellow-400 text-black font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                  >
+                    Problem Statements
+                  </Link>
+                ) : (
+                  <Link
+                    href="/chatbotbattle-problemstatements"
+                    className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                  >
+                    Problem Statements (Coming Soon)
+                  </Link>
+                )}
               </div>
               {/* <div className="flex flex-wrap justify-center gap-6 mt-6">
               <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed flex items-center gap-2">
@@ -140,6 +168,7 @@ const Home = () => {
               <p className="text-lg text-gray-700 mb-4 font-semibold">
                 Please read the rules carefully before registering.
               </p>
+
               <div className="bg-slate-100 border-2 border-black rounded-md p-4">
                 <h3 className="text-xl font-bold mb-3">🔹 Event Highlights</h3>
                 <ul className="space-y-2 text-gray-700">
@@ -150,8 +179,9 @@ const Home = () => {
                   <li>🚀 Prototype or demo is optional but encouraged</li>
                 </ul>
               </div>
-              {/* Registration and Rule Book Buttons */}
-              <div className="flex flex-wrap justify-center gap-6 mt-6">
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap justify-center gap-6 mt-8">
                 <Link
                   href="https://forms.gle/Gec9EiCy7h6mijgh8"
                   target="_blank"
@@ -161,20 +191,29 @@ const Home = () => {
                   <span className="text-xl">●</span>
                   Register Now
                 </Link>
+
                 <Link
                   href="/aideathon-rulebook"
-                  className="px-6 py-3 border-2 border-black rounded-lg bg-blue-500 text-black font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                  className="px-6 py-3 border-2 border-black rounded-lg bg-blue-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
                 >
                   Rule Book
                 </Link>
-                {/* <div className="px-6 py-3 border-2 border-gray-400 rounded-lg bg-gray-200 text-gray-500 font-semibold shadow-[5px_5px_0px_#9ca3af] cursor-not-allowed">
-                  Problem Statements (Coming Soon)
-                </div> */}
+
                 <Link
                   href="/aideathon-problemstatements"
-                  className="px-6 py-3 border-2 border-black rounded-lg bg-green-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                  className="px-6 py-3 border-2 border-black rounded-lg bg-yellow-400 text-black font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
                 >
-                  View Problem Statements
+                  Problem Statements
+                </Link>
+
+                {/* NEW: PPT Format Button */}
+                <Link
+                  href="/AIfiesta-3.O-AIdeathon-PPT-Format.pptx"
+                  download
+                  className="px-6 py-3 border-2 border-black rounded-lg bg-orange-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer flex items-center gap-2"
+                >
+                  <span>📊</span>
+                  PPT Format
                 </Link>
               </div>
             </div>
