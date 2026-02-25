@@ -11,7 +11,7 @@ const AnnouncementBar = () => {
           AIdeathon! | Read the Rule Books before registering! | 🎉 Welcome to
           AIfiesta 3.0! | Register Now for Chatbot Battle & AIdeathon! | Read
           the Rule Books before registering! | */}
-          🎉 Problem Statements for Chatbot Battle and AIdeathon are out now! | Check them out on our website and start brainstorming your ideas! 
+          🎉 Problem Statements for AIdeathon are out now! | Check them out on our website and start brainstorming your ideas! 
         </span>
       </div>
       <style jsx>{`
