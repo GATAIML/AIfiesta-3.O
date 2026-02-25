@@ -172,9 +172,9 @@ const Home = () => {
                 </div> */}
                 <Link
                   href="/aideathon-problemstatements"
-                  className="px-6 py-3 border-2 border-black rounded-lg bg-purple-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
+                  className="px-6 py-3 border-2 border-black rounded-lg bg-green-500 text-white font-semibold shadow-[5px_5px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition cursor-pointer"
                 >
-                  Problem Statements (Coming Soon)
+                  View Problem Statements
                 </Link>
               </div>
             </div>
