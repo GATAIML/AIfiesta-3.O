@@ -31,7 +31,7 @@ export default function LeaderboardPage() {
 
           {/* 🔥 Event Buttons */}
           <div className="flex flex-col md:flex-row justify-center gap-6 mt-10 px-6 pb-10">
-            <button
+            {/* <button
               disabled={!hasStarted}
               onClick={() => router.push("/chatbotbattle-leaderboard")}
               className={`px-8 py-4 rounded-xl border-2 border-black font-bold text-lg transition-all 
@@ -42,7 +42,7 @@ export default function LeaderboardPage() {
                 }`}
             >
               AIfiesta 3.0 – Chatbot Battle!
-            </button>
+            </button> */}
 
             <button
               disabled={!hasStarted}
