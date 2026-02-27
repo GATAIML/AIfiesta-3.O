@@ -16,7 +16,7 @@ export default function LeaderboardPage() {
   const [loading, setLoading] = useState(true);
 
   // 🔥 Set release date: 27 Feb 2026 11:00 AM
-  const releaseDate = new Date("2026-02-27T11:00:00");
+  const releaseDate = new Date("2026-02-28T11:00:00");
   const now = new Date();
   const isReleased = now >= releaseDate;
 
