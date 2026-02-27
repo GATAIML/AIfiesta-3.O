@@ -62,7 +62,7 @@ export default function LeaderboardPage() {
             <div className="py-10 text-center">
               <p className="text-xl font-semibold text-red-600">
                 Leaderboard will be available on <br />
-                27th Feb 2026 at 11:00 AM
+                27th Feb 2026 at 12:45 PM
               </p>
             </div>
           ) : loading ? (
